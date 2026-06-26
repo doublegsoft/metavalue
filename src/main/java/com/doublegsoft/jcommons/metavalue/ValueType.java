@@ -6,6 +6,10 @@ public enum ValueType {
 
   NUMBER,
 
-  VARIABLE
+  VARIABLE,
+
+  DATE,
+
+  DATETIME,
 
 }
