@@ -12,4 +12,6 @@ public enum ValueType {
 
   DATETIME,
 
+  OBJECT
+
 }
