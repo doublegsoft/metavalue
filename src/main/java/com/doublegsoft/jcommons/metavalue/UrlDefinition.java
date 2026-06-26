@@ -14,7 +14,7 @@ public class UrlDefinition {
   public boolean containVariable(String variable) {
     for (UrlParamDefinition param : params) {
       if (param.getType() == ValueType.VARIABLE && variable.equals(param.getValue())) {
-        return false;
+        return true;
       }
     }
     return false;
