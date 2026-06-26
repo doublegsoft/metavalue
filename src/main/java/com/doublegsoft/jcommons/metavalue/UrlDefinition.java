@@ -11,6 +11,15 @@ public class UrlDefinition {
 
   private final List<UrlParamDefinition> params = new ArrayList<>();
 
+  public boolean containVariable(String variable) {
+    for (UrlParamDefinition param : params) {
+      if (param.getType() == ValueType.VARIABLE && variable.equals(param.getValue())) {
+        return false;
+      }
+    }
+    return false;
+  }
+
   public void addParam(UrlParamDefinition param) {
     params.add(param);
   }

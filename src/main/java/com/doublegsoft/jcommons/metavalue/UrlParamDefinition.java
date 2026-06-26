@@ -4,9 +4,9 @@ public class UrlParamDefinition {
 
   private String name;
 
-  private Object value;
+  private String value;
 
-  private String type;
+  private ValueType type;
 
   private String symbol;
 
@@ -20,19 +20,19 @@ public class UrlParamDefinition {
     this.name = name;
   }
 
-  public Object getValue() {
+  public String getValue() {
     return value;
   }
 
-  public void setValue(Object value) {
+  public void setValue(String value) {
     this.value = value;
   }
 
-  public String getType() {
+  public ValueType getType() {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(ValueType type) {
     this.type = type;
   }
 
