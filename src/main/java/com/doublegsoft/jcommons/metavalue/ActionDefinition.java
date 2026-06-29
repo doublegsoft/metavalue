@@ -8,7 +8,7 @@ public class ActionDefinition {
 
   private String method;
 
-  private String type;
+  private ActionType type;
 
   public String getResource() {
     return resource;
@@ -34,11 +34,11 @@ public class ActionDefinition {
     this.method = method;
   }
 
-  public String getType() {
+  public ActionType getType() {
     return type;
   }
 
-  public void setType(String type) {
+  public void setType(ActionType type) {
     this.type = type;
   }
 }

@@ -18,4 +18,13 @@ public enum ActionType {
     this.symbol = symbol;
   }
 
+  public static ActionType getActionType(String symbol) {
+    for (ActionType type : values()) {
+      if (type.symbol.equals(symbol)) {
+        return type;
+      }
+    }
+    return null;
+  }
+
 }
