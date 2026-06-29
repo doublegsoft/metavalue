@@ -6,9 +6,9 @@ public enum ActionType {
 
   DRAWER("%"),
 
-  DIALOG("^"),
+//  DIALOG("^"),
 
-  OVERLAY("#"),
+  DIALOG("#"),
 
   GOTO("$");
 
