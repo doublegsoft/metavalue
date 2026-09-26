@@ -2,15 +2,15 @@ package com.doublegsoft.jcommons.metavalue;
 
 public enum ActionType {
 
-  WIDGET("@"),
+  GOTO("@"),
 
   DRAWER("%"),
 
-//  DIALOG("^"),
+  DIALOG("^"),
 
-  DIALOG("#"),
+  OVERLAY("#"),
 
-  GOTO("$");
+  WIDGET("$");
 
   private final String symbol;
 
