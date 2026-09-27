@@ -6,9 +6,9 @@ public enum ActionType {
 
   DRAWER("%"),
 
-  DIALOG("^"),
+  SHEET("^"),
 
-  OVERLAY("#"),
+  DIALOG("#"),
 
   WIDGET("$");
 
@@ -16,6 +16,10 @@ public enum ActionType {
 
   private ActionType(String symbol) {
     this.symbol = symbol;
+  }
+
+  public String symbol() {
+    return symbol;
   }
 
   public static ActionType getActionType(String symbol) {
