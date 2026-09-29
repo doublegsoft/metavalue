@@ -10,7 +10,9 @@ public enum ActionType {
 
   DIALOG("#"),
 
-  WIDGET("$");
+  WIDGET("$"),
+
+  API("/");
 
   private final String symbol;
 
