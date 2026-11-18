@@ -6,6 +6,8 @@ public class AttributeValueDefinition {
 
   private Object value;
 
+  private VariableValueDefinition variable;
+
   private ObjectValueDefinition parent;
 
   public String getName() {
@@ -30,5 +32,13 @@ public class AttributeValueDefinition {
 
   public void setParent(ObjectValueDefinition parent) {
     this.parent = parent;
+  }
+
+  public VariableValueDefinition getVariable() {
+    return variable;
+  }
+
+  public void setVariable(VariableValueDefinition variable) {
+    this.variable = variable;
   }
 }
