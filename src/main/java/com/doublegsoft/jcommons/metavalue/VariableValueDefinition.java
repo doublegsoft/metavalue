@@ -31,6 +31,7 @@ public class VariableValueDefinition {
     retVal.setValue(attr.getValue());
     retVal.setParent(attr.getParent());
     retVal.setName(attr.getName());
+    retVal.setVariable(this);
     return retVal;
   }
 }
