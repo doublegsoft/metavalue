@@ -6,6 +6,8 @@ public class AttributeValueDefinition {
 
   private Object value;
 
+  private ObjectValueDefinition parent;
+
   public String getName() {
     return name;
   }
@@ -20,5 +22,13 @@ public class AttributeValueDefinition {
 
   public void setValue(Object value) {
     this.value = value;
+  }
+
+  public ObjectValueDefinition getParent() {
+    return parent;
+  }
+
+  public void setParent(ObjectValueDefinition parent) {
+    this.parent = parent;
   }
 }
