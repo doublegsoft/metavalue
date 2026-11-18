@@ -30,4 +30,13 @@ public class ObjectValueDefinition {
   public void setSearch(AttributeValueDefinition search) {
     this.search = search;
   }
+
+  public AttributeValueDefinition getAttributeValue(String name) {
+    for (AttributeValueDefinition attr : attributeValues) {
+      if (attr.getName().equals(name)) {
+        return attr;
+      }
+    }
+    return null;
+  }
 }
